@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Sense Lock</string>
+
+    //activity_login
+    <string name="top_text">Welcome to</string>
+    <string name="top_text_2">To continue, please sign in or register</string>
+    <string name="email_text">Email</string>
+    <string name="password_text">Password</string>
+    <string name="login_button_text">Sign in</string>
+    <string name="register_text">No account? Tap here to register</string>
+    <string name="password_icon_description">Password Icon</string>
+    <string name="email_icon_description">Email Icon</string>
+
+    //activity_register
+    <string name="password_register">Password</string>
+    <string name="userFirstName">First name</string>
+    <string name="userLastName">Last name</string>
+    <string name="password_confirm">Confirm password</string>
+    <string name="postal_address">Postal address</string>
+    <string name="register_form_text">Please fill out the form below to register</string>
+    <string name="register_form_text_2">(All content must be filled to continue)</string>
+    <string name="register_button">Register</string>
+
+    //content_main
+    <string name="btnActivity">Activity Logs</string>
+    <string name="btnUnlock">Unlock Door</string>
+    <string name="btnWriteTag">Write To Tag</string>
+    <string name="btnFingerprintTest">Fingerprint Scanner</string>
+    //app_bar
+    <string name="title_activity_main">Sense Lock</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    //finger_print_login
+    <string name="numberID">Enter Pin Number</string>
+    <string name="fingerprint_image">Fingerprint Image</string>
+    <string name="sl_logo">Sense Lock Logo</string>
+
+    <string name="prompt_sign_in"> Sign in to continue </string>
+    <string name="prompt_fingerprint">Or, scan your fingerprint</string>
+
+    //fingerprint_dialog
+    <string name="prompt_text_2">Waiting for authentication...</string>
+    <string name="fp_test">Fingerprint Test</string>
+
+    //nav_header_main
+    <string name="user_name_header">Aranan Thangarajah</string>
+    <string name="user_email_header">aranan.t12@gmail.com</string>
+
+    //activity_register_log_in
+    <string name="login_prompt">Please sign in</string>
+    <string name="login_error_prompt">Having trouble signing in? Tap here to contact us</string>
+    <string name="login_error_prompt_2">Or register again</string>
+
+    //contact_us
+    <string name="contact_text">Please enter your email address and the problem you have
+    been experiencing below and we will get back to you as soon as possible. Or call us on 1300 SENSE.
+    </string>
+    <string name="contact_email">Email:</string>
+    <string name="contact_phone_number">Phone Number:</string>
+    <string name="email_address">senselock@gmail.com</string>
+    <string name="phone_number">1300 SENSE</string>
+    <string name="btnSend">Send</string>
+    <string name="userProblem">Tell us the problem here</string>
+
+    //Navigation Menu
+    <string name="nav_unlock_door">Unlock Door</string>
+    <string name="nav_write_to_tag">Write To Tag</string>
+    <string name="nav_activity_logs">Activity Logs</string>
+    <string name="nav_help">Having Problems?</string>
+    <string name="nav_contact_us">Contact Us</string>
+    <string name="nav_feedback">Send Feedback</string>
+
+    //Fragment Files
+    <string name="unlock_door_text">
+        Tapping the button below will allow you to unlock the desired door fit with the Sense Lock
+        system.
+    </string>
+    <string name="logs_text">
+        Tapping the button below will allow you to view various application logs such as when an
+        account was created, when you used the Sense Lock app to unlock a door and much more.
+    </string>
+    <string name="write_to_tag_text">
+        Tapping the button below will allow you to write login credentials to an RFID card or tag.
+        Note: This option cannot be used to erase information on a card. Please make sure you are
+        certain about the card/tag you are writing to!
+    </string>
+
+
+    //From NDEF file
+
+    <string name="service_name">CardEmulation Sample</string>
+    <string name="card_title">Sample Loyalty Card</string>
+    <string name="account_number">Account Number</string>
+
+
+    //From NDED file (Base-Strings)
+
+    <string name="intro_message">
+        <![CDATA[
+
+
+            This sample demonstrates how to emulate an NFC card, using the "host card emulation"
+            feature added in Android 4.4. This sample makes the device appear as a loyalty card
+            whenever the screen is on and the user taps their device on an appropriately configured
+            NFC reader.
+
+            The "CardReader" sample can be used to read the loyalty card implemented in this sample.
+
+
+        ]]>
+    </string>
+
+    /From NDED file (fragment-strings)
+    <string name="sample_show_log">Show Log</string>
+    <string name="sample_hide_log">Hide Log</string>
+
+
+
+</resources>

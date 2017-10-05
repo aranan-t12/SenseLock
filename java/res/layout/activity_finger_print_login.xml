@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.group25.design3a.senselock3.FingerPrintLogin"
+    android:background="@drawable/dark_wallpaper">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_pin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:layout_marginTop="180dp">
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="70dp"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:text="@string/login_button_text"
+            android:background="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_logo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:layout_marginTop="0dp">
+
+        <ImageView
+            android:id="@+id/sl_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="193dp"
+            android:src="@drawable/sl_logo"
+            android:contentDescription="@string/sl_logo"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fingerprint_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView_fingerprint"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_fingerprint"
+                android:layout_marginTop="400dp"
+                android:contentDescription="@string/fingerprint_image"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_Text"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_sign_in"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="350dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_fingerprint"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

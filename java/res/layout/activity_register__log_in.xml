@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_wallpaper"
+    tools:context="com.group25.design3a.senselock3.Register_LogIn">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="212dp"
+            android:src="@drawable/sl_logo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_text_2"
+        android:layout_width="395dp"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="195dp">
+
+        <TextView
+            android:id="@+id/Welcome_Text_2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/login_prompt"
+            android:textAlignment="center"
+            android:textSize="23sp"
+            android:textStyle="normal"
+
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="240dp"
+        android:ems="10"
+        android:hint="@string/email_text"
+        android:inputType="textEmailAddress"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="320dp"
+        android:ems="10"
+        android:hint="@string/password_text"
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/password_image"
+        android:contentDescription="@string/password_icon_description"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_password_icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="330dp"
+        app:layout_constraintHorizontal_bias="0.043" />
+
+
+    <ImageView
+        android:id="@+id/email_image"
+        android:contentDescription="@string/email_icon_description"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_email_icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        android:layout_marginTop="260dp" />
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="410dp"
+        android:ems="10"
+        android:text="@string/login_button_text"
+        android:background="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.498" />
+
+    <LinearLayout
+        android:id="@+id/layout_loginError"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="480dp"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/loginError"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text="@string/login_error_prompt"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_loginError2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="540dp"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
+

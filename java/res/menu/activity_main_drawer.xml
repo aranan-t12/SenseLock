@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_unlock_door"
+            android:icon="@drawable/ic_menu_unlock"
+            android:title="@string/nav_unlock_door" />
+        <item
+            android:id="@+id/nav_activity_log"
+            android:icon="@drawable/ic_manu_activity_logs"
+            android:title="@string/nav_activity_logs" />
+        <item
+            android:id="@+id/nav_write_to_tag"
+            android:icon="@drawable/ic_menu_write_to_tag"
+            android:title="@string/nav_write_to_tag" />
+
+    </group>
+
+    <item android:title="@string/nav_help">
+        <menu>
+            <item
+                android:id="@+id/nav_contact_us"
+                android:icon="@drawable/ic_menu_contact_us"
+                android:title="@string/nav_contact_us" />
+
+        </menu>
+    </item>
+
+
+
+</menu>

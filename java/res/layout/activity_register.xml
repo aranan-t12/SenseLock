@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.group25.design3a.senselock3.RegisterActivity"
+    android:background="@drawable/dark_wallpaper">
+
+    <ScrollView
+        android:id="@+id/register_form"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/register_form_input"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="56dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register_form_text"
+                android:textAlignment="center"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register_form_text_2"
+                android:textAlignment="center"
+                android:textSize="19sp"
+                android:textColor="#FFFFFF"/>
+
+            <EditText
+                android:id="@+id/userFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:hint="@string/userFirstName"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/userLastName"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:hint="@string/userLastName"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/userEmail"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:hint="@string/email_text"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:hint="@string/password_register"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="250dp"
+                android:layout_height="48dp"
+                android:text="@string/register_button"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_wallpaper"
+    tools:context="com.group25.design3a.senselock3.LoginActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="212dp"
+            android:src="@drawable/sl_logo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_text"
+        android:layout_width="395dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="170dp">
+
+        <TextView
+            android:id="@+id/contactText"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="@string/contact_text"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_width="350dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="300dp"
+        android:ems="10"
+        android:hint="@string/email_text"
+        android:inputType="textEmailAddress"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userProblem"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="360dp"
+        android:ems="10"
+        android:hint="@string/userProblem"
+        android:inputType="text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/llSend"
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:orientation="vertical"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="400dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnUnlock"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="180dp"
+            android:text="@string/btnSend"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

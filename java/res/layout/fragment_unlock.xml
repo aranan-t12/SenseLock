@@ -1,0 +1,70 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.group25.design3a.senselock3.UnlockFragment"
+    android:background="@drawable/dark_wallpaper"
+    android:id="@+id/clLogs">
+
+
+
+    <LinearLayout
+        android:id="@+id/llUnlock"
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:orientation="vertical"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/btnUnlock"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="180dp"
+            android:text="@string/btnUnlock"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llLogsText"
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:orientation="vertical"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/unlock_door_info"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:text="@string/unlock_door_text"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
